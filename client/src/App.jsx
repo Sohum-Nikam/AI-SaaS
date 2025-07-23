@@ -1,10 +1,13 @@
+import { Home } from 'lucide-react'
 import React from 'react'
-import { Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
   return (
     <div>
-      <Routes />
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </div>
   )
 }
